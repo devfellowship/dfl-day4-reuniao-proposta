@@ -1,0 +1,5 @@
+{
+  "dev": { "pessoas": 1, "horas_semana": 40 },
+  "design": { "pessoas": 1, "horas_semana": 20 },
+  "qa": { "pessoas": 1, "horas_semana": 20 }
+}

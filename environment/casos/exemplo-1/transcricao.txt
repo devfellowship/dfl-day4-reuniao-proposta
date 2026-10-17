@@ -1,0 +1,15 @@
+[001] Agência (Léo): Oi, Paulo. Conta pra gente o que a loja precisa.
+[002] Cliente (Paulo): Oi, Léo. A gente vende peças de bicicleta e quer controlar os pedidos.
+[003] Cliente (Paulo): Preciso de um painel para cadastrar produtos e ver os pedidos.
+[004] Agência (Léo): E quem acessa esse painel?
+[005] Cliente (Paulo): Só eu e mais dois vendedores, então uns três usuários.
+[006] Cliente (Paulo): Cada um precisa ter login próprio.
+[007] Agência (Léo): Faz sentido. E relatórios de vendas?
+[008] Cliente (Paulo): Seria bom ter um relatório de vendas por mês.
+[009] Agência (Léo): E o prazo?
+[010] Cliente (Paulo): Sem pressa, pode ser em 12 semanas.
+[011] Agência (Léo): Ótimo. E a hospedagem?
+[012] Cliente (Paulo): A gente já usa AWS na loja virtual.
+[013] Agência (Léo): E como fica a forma de pagar?
+[014] Cliente (Paulo): Prefiro em 3 parcelas.
+[015] Agência (Léo): Perfeito, mando a proposta amanhã.

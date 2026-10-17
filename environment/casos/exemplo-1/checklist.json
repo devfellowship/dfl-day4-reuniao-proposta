@@ -1,0 +1,5 @@
+[
+  { "id": "hospedagem", "pergunta": "Onde o sistema vai ficar hospedado?", "palavras": ["hospedagem", "servidor", "nuvem", "aws"] },
+  { "id": "orcamento", "pergunta": "Qual o orçamento disponível?", "palavras": ["orçamento", "verba"] },
+  { "id": "usuarios", "pergunta": "Quantos usuários vão usar?", "palavras": ["usuários", "acessos"] }
+]

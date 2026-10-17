@@ -1,0 +1,34 @@
+[001] Agência (Téo): Oi, Sofia. Me conta da cafeteria.
+[002] Cliente (Sofia): A gente torra o próprio café e quer vender os kits pela internet.
+[003] Cliente (Sofia): Preciso de uma landing page bonita para os kits.
+[004] Agência (Téo): E como o cliente paga?
+[005] Cliente (Sofia): Pix é obrigatório.
+[006] Agência (Téo): E a entrega dos kits?
+[007] Cliente (Sofia): Os Correios buscam aqui na loja.
+[008] Agência (Téo): Faz sentido. Vocês querem um aplicativo também?
+[009] Cliente (Sofia): Aplicativo não precisa, o pessoal compra pelo Instagram.
+[010] Agência (Téo): E para você acompanhar os pedidos?
+[011] Cliente (Sofia): Os pedidos podem chegar no meu e-mail mesmo.
+[012] Agência (Téo): Quer relatórios de vendas também?
+[013] Cliente (Sofia): Esquece relatório, eu somo as vendas na mão mesmo.
+[014] Agência (Téo): Certo. E um lembrete por e-mail para o cliente comprar de novo?
+[015] Cliente (Sofia): Gostaria de lembretes se sobrar tempo.
+[016] Agência (Téo): Combinado. Quantos clientes vocês atendem?
+[017] Cliente (Sofia): Usuários eu não sei dizer.
+[018] Cliente (Sofia): Hoje são uns 300 acessos no Instagram por semana.
+[019] Agência (Téo): E o prazo?
+[020] Cliente (Sofia): Sobre prazo a gente fala semana que vem.
+[021] Agência (Téo): Sugiro 6 semanas então.
+[022] Cliente (Sofia): Vou pensar com meu sócio.
+[023] Agência (Téo): E a hospedagem?
+[024] Cliente (Sofia): Pode ficar na nuvem de vocês.
+[025] Agência (Téo): Voltando no relatório, sem ele você não enxerga o ticket médio.
+[026] Cliente (Sofia): Verdade, então o relatório de vendas eu preciso sim.
+[027] Agência (Téo): E orçamento?
+[028] Cliente (Sofia): Ainda não decidimos o orçamento.
+[029] Agência (Téo): E o estoque, fica onde?
+[030] Cliente (Sofia): O estoque roda num computador aqui dentro da loja.
+[031] Agência (Téo): E como você prefere pagar?
+[032] Cliente (Sofia): À vista com 10% de desconto.
+[033] Agência (Téo): Tudo bem, mando três opções.
+[034] Cliente (Sofia): Obrigada, Téo!

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "task": {
+    "name": "dfl/day4-reuniao-proposta",
+    "version": "1",
+    "description": "Transcrição de reunião de descoberta em proposta que o cliente assina, em quatro etapas encadeadas: proposta (escopo com retiradas e prioridades, perguntas pendentes, prazo e preço de três pacotes), cronograma do pacote recomendado com a capacidade da equipe, riscos com horas de contingência e plano de pagamento em parcelas com vencimento nos marcos.",
+    "authors": [
+      {
+        "name": "DFL"
+      }
+    ],
+    "keywords": [
+      "hackathon",
+      "transcricao",
+      "proposta-comercial",
+      "precificacao",
+      "cronograma",
+      "pagamento",
+      "regras"
+    ]
+  },
+  "metadata": {
+    "title": "Reunião em proposta comercial",
+    "tags": {
+      "tools": [],
+      "concepts": [
+        "business-rules",
+        "text-parsing",
+        "pricing",
+        "scheduling",
+        "multi-stage-pipeline"
+      ]
+    }
+  },
+  "instruction": "instruction.md",
+  "environment": {
+    "dir": "environment",
+    "install": [
+      "npm",
+      "ci",
+      "--include=dev",
+      "--no-audit",
+      "--no-fund",
+      "--ignore-scripts"
+    ],
+    "allow_internet": false,
+    "cpus": 2,
+    "memory_mb": 2048,
+    "tools": {
+      "builtin": [
+        "read",
+        "write",
+        "edit",
+        "bash",
+        "search",
+        "list",
+        "todo"
+      ],
+      "mcp": []
+    },
+    "run_egress": [
+      "model-gateway"
+    ],
+    "secrets": [],
+    "resources": {
+      "cpus": 2,
+      "memory_mb": 2048,
+      "pids": 512
+    }
+  },
+  "tests": {
+    "public": "tests/public",
+    "hidden": "tests/hidden"
+  },
+  "solution": {
+    "patch": "solution/solution.patch"
+  },
+  "editable_paths": [
+    "out/**"
+  ],
+  "protected_paths": [
+    "tests/**",
+    "casos/**",
+    "README.md",
+    "package.json",
+    "package-lock.json",
+    "vitest.config.*"
+  ],
+  "verifier": {
+    "cmd": [
+      "npx",
+      "vitest",
+      "run",
+      "{tests}",
+      "--reporter=json",
+      "--outputFile={report}"
+    ],
+    "report": "vitest-json",
+    "timeout_sec": 120
+  },
+  "agent": {
+    "timeout_sec": 600
+  },
+  "est_minutes": 40
+}

@@ -1,0 +1,8 @@
+[
+  {"id":"dados_sensiveis","sinais":["lgpd","cpf","dados bancários","atestado"],"horas":{"dev":12,"qa":8}},
+  {"id":"decisao_pendente","sinais":["sócio","conselho","assembleia"],"horas":{"dev":4,"design":4}},
+  {"id":"integracao_legada","modulo":"integracao_erp","sinais":["servidor nosso","aqui dentro"],"horas":{"dev":16,"qa":8}},
+  {"id":"migracao_dados","sinais":["planilha","caderno","papelada"],"horas":{"dev":12,"qa":4}},
+  {"id":"prazo_estourado","gatilho":"estoura_prazo","horas":{"dev":16,"qa":8}},
+  {"id":"terceiro_envolvido","sinais":["sobrinho","filho","designer","agência antiga"],"horas":{"dev":8}}
+]

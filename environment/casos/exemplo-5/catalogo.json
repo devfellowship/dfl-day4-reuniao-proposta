@@ -1,0 +1,12 @@
+{
+  "agenda": { "horas": {"dev": 48, "design": 12, "qa": 12}, "sinonimos": ["agenda", "agendamento", "agendamentos"] },
+  "app_mobile": { "horas": {"dev": 160, "design": 40, "qa": 40}, "sinonimos": ["app", "aplicativo", "android", "iphone"] },
+  "chat": { "horas": {"dev": 56, "design": 12, "qa": 16}, "sinonimos": ["chat", "mensagens"], "requer": ["login"] },
+  "integracao_erp": { "horas": {"dev": 64, "qa": 16}, "sinonimos": ["erp", "totvs", "sap"], "requer": ["painel_admin"] },
+  "integracao_pagamento": { "horas": {"dev": 40, "qa": 16}, "sinonimos": ["pagamento", "pagamentos", "pix", "cartão", "boleto"], "requer": ["login"] },
+  "login": { "horas": {"dev": 24, "design": 8, "qa": 8}, "sinonimos": ["login", "cadastro", "senha"] },
+  "notificacoes": { "horas": {"dev": 20, "qa": 6}, "sinonimos": ["notificação", "notificações", "push", "lembrete", "lembretes"] },
+  "painel_admin": { "horas": {"dev": 60, "design": 16, "qa": 16}, "sinonimos": ["painel", "admin", "backoffice"], "requer": ["login"] },
+  "relatorios": { "horas": {"dev": 32, "design": 8, "qa": 8}, "sinonimos": ["relatório", "relatórios", "dashboard"] },
+  "site_institucional": { "horas": {"dev": 30, "design": 24, "qa": 6}, "sinonimos": ["site institucional", "landing page"] }
+}

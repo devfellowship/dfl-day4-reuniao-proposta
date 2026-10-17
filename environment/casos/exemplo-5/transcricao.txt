@@ -1,0 +1,78 @@
+[001] Agência (Nina): Bom dia, pessoal. Obrigada por reunirem a diretoria toda.
+[002] Cliente (Renata): Bom dia, Nina. Estamos eu, o Caio do TI e o Bruno do financeiro.
+[003] Agência (Nina): Perfeito. Qual a dor principal da FitMais hoje?
+[004] Cliente (Renata): Temos seis unidades e cada uma controla as aulas de um jeito.
+[005] Cliente (Renata): A gente precisa de agendamento de aulas com limite de vagas.
+[006] Agência (Nina): O aluno marca pelo celular?
+[007] Cliente (Renata): Sim, precisamos de app para o aluno.
+[008] Cliente (Caio): E o app precisa funcionar offline?
+[009] Agência (Nina): Dá para fazer, mas encarece bastante.
+[010] Cliente (Caio): Então offline não, só o básico.
+[011] Agência (Nina): E o aluno entra como?
+[012] Cliente (Caio): Cada aluno precisa ter login com CPF e senha.
+[013] Agência (Nina): Certo. E para os professores e a recepção?
+[014] Cliente (Renata): Precisa de um painel para a recepção ver as turmas do dia.
+[015] Cliente (Bruno): Eu gostaria de ver a inadimplência na mesma tela.
+[016] Agência (Nina): A inadimplência vem de onde hoje?
+[017] Cliente (Bruno): Do nosso ERP, que é o SAP Business One.
+[018] Cliente (Bruno): Tem que ter integração com o SAP, senão eu digito tudo de novo.
+[019] Agência (Nina): Integração com SAP é um módulo à parte, ok?
+[020] Cliente (Bruno): Ok, entendi.
+[021] Agência (Nina): E a mensalidade, o aluno paga pelo app?
+[022] Cliente (Bruno): Seria bom cobrar por pix e cartão recorrente.
+[023] Cliente (Renata): Bruno, cartão recorrente não dá problema com estorno?
+[024] Cliente (Bruno): Às vezes dá, mas compensa.
+[025] Agência (Nina): A gente trata estorno no módulo de pagamento.
+[026] Cliente (Renata): Então tá.
+[027] Agência (Nina): Falando em dados, vocês guardam informação de saúde do aluno?
+[028] Cliente (Caio): Guardamos o atestado médico, então tem LGPD no meio.
+[029] Agência (Nina): Certo, isso entra no cuidado com consentimento.
+[030] Agência (Nina): Quantos alunos ativos vocês têm?
+[031] Cliente (Renata): Uns quatro mil alunos nas seis unidades.
+[032] Agência (Nina): E hospedagem, vocês têm preferência?
+[033] Cliente (Caio): Servidor eu ainda não sei, vou ver o contrato atual.
+[034] Agência (Nina): Sem problema. E prazo?
+[035] Cliente (Renata): A gente queria lançar em 10 semanas.
+[036] Agência (Nina): Dez semanas com app e SAP é bem apertado.
+[037] Cliente (Renata): Entendo. Deixa eu ver com o Bruno.
+[038] Cliente (Bruno): Por mim a gente pode estender um pouco.
+[039] Agência (Nina): Outra coisa: recomendamos notificações por push para lembrar a aula.
+[040] Cliente (Renata): Lembrete de aula seria bom.
+[041] Cliente (Caio): Notificação push não precisa, o app já mostra a agenda.
+[042] Cliente (Renata): Hum, verdade.
+[043] Agência (Nina): E relatórios para a diretoria?
+[044] Cliente (Renata): Precisamos de um dashboard de ocupação por unidade.
+[045] Cliente (Bruno): E dashboard financeiro?
+[046] Agência (Nina): Pode ser o mesmo módulo de relatórios.
+[047] Cliente (Bruno): Ótimo.
+[048] Agência (Nina): Vocês têm site hoje?
+[049] Cliente (Renata): Temos, mas está velho.
+[050] Agência (Nina): Podemos refazer o site institucional com a nova marca.
+[051] Cliente (Renata): O site institucional entra se der tempo.
+[052] Agência (Nina): E o chat com o professor?
+[053] Cliente (Caio): Chat a gente gostaria, mas não é prioridade.
+[054] Cliente (Renata): Pensando bem, deixa de fora o chat e o site institucional.
+[055] Agência (Nina): Entendido. Qual seria o orçamento?
+[056] Cliente (Bruno): Orçamento eu não sei ainda, depende do conselho.
+[057] Agência (Nina): Tudo bem. E a identidade visual?
+[058] Cliente (Renata): A marca foi refeita no ano passado, mando o manual.
+[059] Agência (Nina): Ótimo. Voltando no app: com o prazo curto, ele é o maior risco.
+[060] Cliente (Renata): Então esquece o app por agora, o aluno usa a versão web.
+[061] Cliente (Caio): Mas o login continua, certo?
+[062] Agência (Nina): Continua, na versão web.
+[063] Cliente (Bruno): Pensando bem, o painel não precisa, a recepção usa o próprio SAP.
+[064] Agência (Nina): Mas a integração com o SAP continua?
+[065] Cliente (Bruno): Continua, o SAP é obrigatório.
+[066] Agência (Nina): Combinado. Então o prazo fica como?
+[067] Cliente (Renata): Conversando com o Bruno, dois meses está ótimo.
+[068] Agência (Nina): Dois meses, fechado.
+[069] Cliente (Caio): Ah, e depois do lançamento, quem cuida da manutenção?
+[070] Agência (Nina): Temos um plano de suporte mensal.
+[071] Cliente (Caio): Legal, vamos ver isso depois.
+[072] Agência (Nina): Para fechar, a forma de pagar: pode ser à vista com desconto.
+[073] Cliente (Bruno): Prefiro entrada de 40% e o resto em oito parcelas.
+[074] Cliente (Renata): Bruno, pode ser em dez parcelas?
+[075] Cliente (Bruno): Não, oito está bom.
+[076] Agência (Nina): Anotado, a gente confere o limite de parcelas.
+[077] Agência (Nina): Perfeito. Mando a proposta com os três pacotes até quinta.
+[078] Cliente (Renata): Obrigada, Nina.

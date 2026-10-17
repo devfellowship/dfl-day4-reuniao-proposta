@@ -1,0 +1,49 @@
+{
+  "resumo": [
+    "O agente recebe a transcrição numerada de uma reunião de descoberta, o catálogo de módulos da agência, a tabela de preços, o checklist de perguntas, a equipe disponível e a lista de riscos conhecidos.",
+    "Ele devolve um JSON com quatro etapas: a proposta (escopo, retiradas, pendências, prazo e preço de três pacotes), o cronograma do pacote recomendado, os riscos com as horas de contingência e o plano de pagamento em parcelas.",
+    "O difícil é ler como a regra manda e não como a intuição sugere, e não errar cedo: um módulo esquecido na proposta muda o cronograma, que muda os riscos, que muda o preço, que muda cada parcela."
+  ],
+  "exemplo-1": {
+    "titulo": "Loja de peças de bicicleta",
+    "historia": "O Paulo vende peças de bicicleta e quer um painel para cadastrar produtos e ver pedidos. Pede login para cada vendedor e acha que um relatório de vendas seria bom. Sem pressa: 12 semanas. Ele prefere pagar em 3 parcelas."
+  },
+  "exemplo-2": {
+    "titulo": "Rede de clínicas que quer sair do telefone",
+    "historia": "A Marina quer agendamento online, cadastro do paciente, painel da recepção e, de início, app nas lojas. Quando ouve que oito semanas é pouco para o app, desiste dele. A agência ainda sugere notificações e um site novo. No fim, a agência pede 50% de entrada, mas a Marina fecha 20% de entrada e quatro parcelas."
+  },
+  "exemplo-3": {
+    "titulo": "Imobiliária que perde contatos",
+    "historia": "O Jorge e a Carla, donos de uma imobiliária, querem um chat no site, um painel para os corretores, integração com o TOTVS e boleto de aluguel. A feira de imóveis é em três meses. O Jorge quer pagar à vista, mas a Carla prefere 5 parcelas sem entrada."
+  },
+  "exemplo-4": {
+    "titulo": "Cafeteria que quer vender kits online",
+    "historia": "A Sofia quer uma landing page para vender kits de café com pix, sem app. Ela tira os relatórios e depois volta atrás. O prazo fica para 'semana que vem'. Ela quer pagar à vista com 10% de desconto."
+  },
+  "exemplo-5": {
+    "titulo": "Rede de academias com a diretoria inteira na sala",
+    "historia": "A Renata (diretora), o Caio (TI) e o Bruno (financeiro) da FitMais discutem agendamento de aulas, app, painel, integração com o SAP, pix e dashboards. Ao longo de 78 linhas eles se contradizem, retiram módulos e mudam o prazo. No fim o Bruno pede 40% de entrada e oito parcelas."
+  },
+  "etapas": [
+    {
+      "nome": "1. Proposta",
+      "entrada": "A transcrição, o catálogo de módulos, a tabela de preços e o checklist.",
+      "saida": "O que o cliente confirmou (com prioridade e linha), o que ele tirou, as perguntas sem resposta, o prazo em semanas e o preço de três pacotes: essencial, recomendado e completo."
+    },
+    {
+      "nome": "2. Cronograma",
+      "entrada": "Os módulos do pacote recomendado (etapa 1) e a equipe: quantas pessoas de cada papel e quantas horas por semana.",
+      "saida": "A semana em que cada módulo começa e termina, feitos um por vez respeitando as dependências, o total de semanas e se isso passa do prazo que o cliente pediu."
+    },
+    {
+      "nome": "3. Riscos",
+      "entrada": "As falas do cliente, a lista de riscos conhecidos e o cronograma (etapa 2).",
+      "saida": "Quais riscos apareceram (dados em planilha, terceiro envolvido, dado sensível, decisão de outra pessoa, prazo estourado...), as horas de contingência e o novo preço do pacote recomendado."
+    },
+    {
+      "nome": "4. Pagamento",
+      "entrada": "O preço com contingência (etapa 3), o cronograma (etapa 2) e o que o cliente falou sobre entrada, parcelas ou pagamento à vista.",
+      "saida": "A forma de pagamento e cada parcela com valor em centavos e a semana em que vence, presa ao fim de um módulo do cronograma."
+    }
+  ]
+}
