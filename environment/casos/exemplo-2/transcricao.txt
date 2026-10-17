@@ -1,0 +1,43 @@
+[001] Agência (Rafa): Bom dia, Marina. Obrigado pelo tempo. Pode contar um pouco do projeto?
+[002] Cliente (Marina): Claro. Somos uma rede de três clínicas e o agendamento hoje é todo por telefone.
+[003] Cliente (Marina): A gente precisa de agendamento online para os pacientes.
+[004] Agência (Rafa): Entendi. E o paciente entra com login e senha?
+[005] Cliente (Marina): Sim, o paciente precisa ter cadastro com senha.
+[006] Agência (Rafa): E para a equipe da recepção?
+[007] Cliente (Marina): A recepção precisa de um painel para ver a agenda do dia.
+[008] Agência (Rafa): Faz sentido. Vocês querem um app nas lojas também?
+[009] Cliente (Marina): Sim, precisamos de app para Android e iPhone.
+[010] Agência (Rafa): Ótimo. E o pagamento da consulta?
+[011] Cliente (Marina): Seria bom aceitar pix na hora de marcar.
+[012] Agência (Rafa): Pix e cartão a gente integra junto.
+[013] Cliente (Marina): Perfeito.
+[014] Agência (Rafa): Sobre relatórios, o que a diretoria acompanha hoje?
+[015] Cliente (Marina): Eles olham faltas e faturamento numa planilha.
+[016] Cliente (Marina): Gostaria de relatórios de faltas por médico se der tempo.
+[017] Agência (Rafa): A gente também recomenda notificações por push para lembrar a consulta.
+[018] Cliente (Marina): Vocês já fizeram isso em outro cliente?
+[019] Agência (Rafa): Sim, numa rede de academias. Reduziu bastante a falta.
+[020] Cliente (Marina): Legal, vou levar isso para a diretoria.
+[021] Agência (Rafa): Quantas pessoas vão usar o sistema por mês?
+[022] Cliente (Marina): Uns dois mil usuários ativos por mês.
+[023] Agência (Rafa): E sobre hospedagem, vocês têm servidor próprio?
+[024] Cliente (Marina): Hospedagem eu não sei, vou ver com o TI.
+[025] Agência (Rafa): Sem problema. E qual o prazo ideal?
+[026] Cliente (Marina): A campanha de lançamento começa em março, então umas oito semanas.
+[027] Agência (Rafa): Oito semanas fica apertado com o app nas lojas.
+[028] Cliente (Marina): Então esquece o app, faz só a versão web por enquanto.
+[029] Agência (Rafa): Combinado. E aquelas notificações que comentei?
+[030] Cliente (Marina): Notificação por push não precisa, o pessoal já confirma por telefone.
+[031] Agência (Rafa): Certo. E os relatórios, entram mesmo?
+[032] Cliente (Marina): Pensando bem, a diretoria vai cobrar, então os relatórios precisam entrar.
+[033] Agência (Rafa): Anotado. Sobre o orçamento, vocês já têm uma faixa?
+[034] Cliente (Marina): O orçamento aprovado é de até 80 mil.
+[035] Agência (Rafa): E a identidade visual, vocês têm manual?
+[036] Cliente (Marina): Temos sim, mando o manual da marca amanhã.
+[037] Agência (Rafa): A gente também pode refazer o site institucional de vocês.
+[038] Cliente (Marina): Hum, interessante.
+[039] Agência (Rafa): Vou montar a proposta com três pacotes.
+[040] Cliente (Marina): Ah, e o cadastro tem que ter login com Google?
+[041] Agência (Rafa): Pode ter, sem custo extra.
+[042] Cliente (Marina): Então tá. Obrigada, Rafa!
+[043] Agência (Rafa): Eu que agradeço. Mando a proposta até sexta.

@@ -1,0 +1,33 @@
+[001] Agência (Bia): Boa tarde, Jorge e Carla. Vamos começar pelo problema principal?
+[002] Cliente (Jorge): A gente perde muito contato porque o corretor demora a responder.
+[003] Cliente (Carla): Precisamos de um chat no site para o visitante falar com o corretor.
+[004] Agência (Bia): O visitante precisa fazer login para usar o chat?
+[005] Cliente (Jorge): Não, o visitante entra direto.
+[006] Cliente (Carla): Um cadastro para o visitante salvar imóveis favoritos só se sobrar tempo.
+[007] Agência (Bia): E os corretores, como acompanham os imóveis hoje?
+[008] Cliente (Carla): Numa planilha compartilhada, uma bagunça.
+[009] Cliente (Carla): Eles precisam de um painel com os imóveis e os contatos de cada um.
+[010] Agência (Bia): Vocês usam algum ERP?
+[011] Cliente (Jorge): Usamos o TOTVS no financeiro.
+[012] Cliente (Jorge): Seria bom integrar com o TOTVS para não digitar contrato duas vezes.
+[013] Agência (Bia): Integração com TOTVS a gente faz bastante.
+[014] Cliente (Carla): E boleto para o aluguel, vocês fazem?
+[015] Agência (Bia): Fazemos boleto e pix.
+[016] Cliente (Carla): Então gostaria do boleto do aluguel pelo sistema também.
+[017] Agência (Bia): Quantas pessoas usam por dia?
+[018] Cliente (Jorge): São 40 corretores e uns 3 mil acessos por mês no site.
+[019] Agência (Bia): E o prazo? A gente estima umas 10 semanas.
+[020] Cliente (Jorge): A feira de imóveis é em três meses, então tem que ficar pronto até lá.
+[021] Agência (Bia): Três meses dá, mas sem aplicativo.
+[022] Cliente (Carla): Tudo bem, não quero aplicativo agora.
+[023] Agência (Bia): E a hospedagem?
+[024] Cliente (Jorge): Vou ver com meu sobrinho que cuida do servidor.
+[025] Agência (Bia): E a parte visual, vocês têm logo?
+[026] Cliente (Carla): Temos logo e as cores da marca.
+[027] Agência (Bia): E de orçamento, quanto vocês separaram?
+[028] Cliente (Jorge): O orçamento é de até 120 mil.
+[029] Cliente (Carla): Ah, relatório de visitas por corretor seria bom se der tempo.
+[030] Agência (Bia): Anotado. Também dá para colocar notificação no celular do corretor.
+[031] Cliente (Carla): Vamos pensar nisso depois.
+[032] Agência (Bia): Fechado. Mando os três pacotes amanhã.
+[033] Cliente (Jorge): Obrigado, Bia. Até mais.

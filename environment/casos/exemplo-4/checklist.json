@@ -1,0 +1,6 @@
+[
+  { "id": "hospedagem", "pergunta": "Onde o sistema vai ficar hospedado?", "palavras": ["hospedagem", "servidor", "nuvem", "aws"] },
+  { "id": "identidade_visual", "pergunta": "Já existe identidade visual?", "palavras": ["marca", "logo", "identidade visual"] },
+  { "id": "orcamento", "pergunta": "Qual o orçamento disponível?", "palavras": ["orçamento", "verba"] },
+  { "id": "usuarios", "pergunta": "Quantos usuários vão usar?", "palavras": ["usuários", "acessos"] }
+]

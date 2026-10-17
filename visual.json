@@ -1,0 +1,104 @@
+{
+  "resumo": [
+    "O agente recebe a transcrição numerada de uma reunião de descoberta, o catálogo de módulos da agência (horas por papel, sinônimos e dependências), a tabela de preços e o checklist de perguntas.",
+    "Ele precisa devolver um JSON com o escopo confirmado pelo cliente (prioridade e linha), o que saiu do escopo, as perguntas sem resposta, o prazo em semanas e o preço em centavos de três pacotes.",
+    "O difícil é ler como a regra manda e não como a intuição sugere: só o cliente decide, a última fala vence, 'não precisa' é retirada, vírgula separa oração, prazo vem por extenso ou em meses, e o preço tem dependências, faixas inclusivas, desconto, arredondamento e mínimo."
+  ],
+  "exemplo-1": {
+    "titulo": "Loja de peças de bicicleta",
+    "historia": "O Paulo vende peças de bicicleta e quer um painel para cadastrar produtos e ver pedidos. Pede login para cada vendedor e acha que um relatório de vendas seria bom. Sem pressa: 12 semanas.",
+    "armadilhas": [
+      "Regra 6: 'seria bom' deixa o relatório como desejavel, então ele só entra a partir do pacote recomendado",
+      "Regra 18: o essencial dá 1.764.000 centavos e é arredondado para cima até o múltiplo de 10.000"
+    ],
+    "resposta_explicada": [
+      "prazo_semanas = 12, acima de todas as faixas de urgência, então pct_urgencia = 100 (regra 16)",
+      "perguntas_pendentes = [orcamento]: ninguém falou de orçamento; 'AWS' responde hospedagem e 'usuários' responde usuarios (regra 11)",
+      "essencial = 1.770.000: login + painel = 1.764.000, arredondado para cima (regra 18)",
+      "recomendado = completo = 2.420.000: entra o relatório e não há módulo opcional"
+    ]
+  },
+  "exemplo-2": {
+    "titulo": "Rede de clínicas que quer sair do telefone",
+    "historia": "A Marina quer agendamento online, cadastro do paciente, painel da recepção e, de início, app nas lojas. Quando ouve que oito semanas é pouco para o app, desiste dele. A agência ainda sugere notificações e um site novo.",
+    "armadilhas": [
+      "Regra 8: a Marina pede o app na linha 9 e diz 'esquece o app' na linha 28, então o app vai para fora_do_escopo",
+      "Regra 1: a agência sugere o site institucional e o cliente só responde 'Hum, interessante', então o site não aparece em lista nenhuma",
+      "Regra 6: 'Notificação por push não precisa' é remocao, mesmo contendo 'precisa'",
+      "Regra 5: 'pix' é sinônimo de integracao_pagamento",
+      "Regra 3: 'o cadastro tem que ter login com Google?' é pergunta e não decide nada",
+      "Regra 8: 'gostaria de relatórios ... se der tempo' deixa os relatórios como opcional (opcional vence desejavel na mesma oração), e a linha 32 ('os relatórios precisam entrar') sobe para obrigatorio",
+      "Regras 9 e 16: 'umas oito semanas' = 8, exatamente no limite inclusivo da faixa de 8 semanas (125%)",
+      "Regra 11: 'Hospedagem eu não sei' não responde a pergunta de hospedagem"
+    ],
+    "resposta_explicada": [
+      "agenda linha 7: a última oração que classificou a agenda é 'A recepção precisa de um painel para ver a agenda do dia'",
+      "relatorios obrigatorio linha 32: a última fala vence o opcional da linha 16",
+      "fora_do_escopo = [app_mobile, notificacoes]: as duas foram retiradas pelo cliente",
+      "perguntas_pendentes = [hospedagem, integracoes]: hospedagem teve 'não sei' e ninguém do cliente falou de integração",
+      "essencial = 4.230.000: 3.384.000 × 125% (252 horas, sem desconto)",
+      "recomendado = completo = 4.650.000: com o pix são 308 horas (≥ 300), então 4.128.000 × 125% × 90% = 4.644.000, arredondado para 4.650.000"
+    ]
+  },
+  "exemplo-3": {
+    "titulo": "Imobiliária que perde contatos",
+    "historia": "O Jorge e a Carla, donos de uma imobiliária, querem um chat no site, um painel para os corretores, integração com o TOTVS e boleto de aluguel. A feira de imóveis é em três meses.",
+    "armadilhas": [
+      "Regra 1: falas de dois clientes diferentes valem igual",
+      "Regra 6: 'Um cadastro para o visitante ... só se sobrar tempo' deixa o login como opcional",
+      "Regra 14: o login é opcional, mas o chat e o painel exigem login, então ele já entra no preço do pacote essencial",
+      "Regra 9: 'três meses' = 12 semanas; as 10 semanas citadas pela agência não contam",
+      "Regra 16: 12 semanas cai exatamente no limite da faixa de 12 (120%)",
+      "Regra 6: 'relatório ... seria bom se der tempo' tem as duas frases na mesma oração e opcional vence desejavel",
+      "Regra 3: 'E boleto para o aluguel, vocês fazem?' é pergunta; o boleto entra só na linha 16"
+    ],
+    "resposta_explicada": [
+      "login opcional linha 6 no escopo, mas cobrado desde o essencial por causa da dependência (regra 14)",
+      "perguntas_pendentes = [hospedagem]: 'Vou ver com meu sobrinho que cuida do servidor' tem 'vou ver' (regra 11)",
+      "essencial = 3.250.000: chat + painel + login = 2.676.000 × 120% = 3.211.200, arredondado para cima até o múltiplo de 50.000",
+      "recomendado = 4.850.000: 352 horas (≥ 250) dão 8% de desconto",
+      "completo = 5.550.000: entram os relatórios (opcional)"
+    ]
+  },
+  "exemplo-4": {
+    "titulo": "Cafeteria que quer vender kits online",
+    "historia": "A Sofia quer uma landing page para vender kits de café com pix, sem app. Ela tira os relatórios e depois volta atrás. O prazo fica para 'semana que vem'.",
+    "armadilhas": [
+      "Regra 4: 'landing page' é um sinônimo de duas palavras de site_institucional",
+      "Regra 8: 'Aplicativo não precisa' manda o app para fora_do_escopo mesmo sem ele ter sido pedido antes",
+      "Regra 8: os relatórios saem na linha 13 ('Esquece relatório') e voltam na linha 26 como obrigatorio",
+      "Regra 6: 'Gostaria de lembretes se sobrar tempo' é opcional, porque opcional vem antes de desejavel",
+      "Regra 9: 'por semana' e 'semana que vem' não têm número antes, e a agência sugerindo 6 semanas não conta, então prazo_semanas = null",
+      "Regra 11: 'Usuários eu não sei dizer' não responde, mas '300 acessos' na linha 18 responde",
+      "Regra 14: o pix exige login, então o login entra no preço sem nunca ter sido citado pelo cliente",
+      "Regra 19: o essencial fica abaixo do mínimo"
+    ],
+    "resposta_explicada": [
+      "prazo_semanas = null, então não há urgência (pct 100)",
+      "perguntas_pendentes = [identidade_visual, orcamento]: ninguém falou de marca e 'Ainda não decidimos o orçamento' é incerteza",
+      "essencial = recomendado = 2.300.000: 2.178.000 arredondado dá 2.180.000, abaixo do mínimo de 2.300.000",
+      "completo = 2.460.000: com os lembretes passa do mínimo"
+    ]
+  },
+  "exemplo-5": {
+    "titulo": "Rede de academias com a diretoria inteira na sala",
+    "historia": "A Renata (diretora), o Caio (TI) e o Bruno (financeiro) da FitMais discutem agendamento de aulas, app, painel, integração com o SAP, pix e dashboards. Ao longo de 73 linhas eles se contradizem, retiram módulos e mudam o prazo.",
+    "armadilhas": [
+      "Regra 8: o painel é obrigatorio na linha 14 e o Bruno o remove na linha 63 ('o painel não precisa')",
+      "Regra 14: o painel está em fora_do_escopo, mas a integração com o SAP exige o painel, e o painel exige login, então os dois entram no preço",
+      "Regra 8: notificações viram desejavel na linha 40 e o Caio as retira na linha 41",
+      "Regra 7: 'deixa de fora o chat e o site institucional' retira dois módulos de uma vez",
+      "Regras 9 e 10: o prazo começa em 10 semanas e termina em 'dois meses' = 8, e as falas da agência não contam",
+      "Regra 16: 8 semanas no limite inclusivo da faixa de 8 (130%)",
+      "Regra 11: 'Servidor eu ainda não sei' e 'Orçamento eu não sei ainda' deixam hospedagem e orçamento pendentes; a manutenção só aparece numa pergunta",
+      "Regra 17: o essencial tem 332 horas e ganha 10% de desconto"
+    ],
+    "resposta_explicada": [
+      "integracao_erp linha 65: 'o SAP é obrigatório' é a última confirmação",
+      "fora_do_escopo = [app_mobile, chat, notificacoes, painel_admin, site_institucional]",
+      "perguntas_pendentes = [hospedagem, orcamento, suporte]",
+      "essencial = 5.590.000: agenda + SAP + login + painel + relatórios = 4.776.000 × 130% × 90% = 5.587.920, arredondado",
+      "recomendado = completo = 6.530.000: entra o pix e não sobra nenhum opcional (o site opcional foi retirado)"
+    ]
+  }
+}

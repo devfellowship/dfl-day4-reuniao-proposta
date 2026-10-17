@@ -1,0 +1,9 @@
+[
+  { "id": "hospedagem", "pergunta": "Onde o sistema vai ficar hospedado?", "palavras": ["hospedagem", "servidor", "nuvem", "aws"] },
+  { "id": "identidade_visual", "pergunta": "Já existe identidade visual?", "palavras": ["marca", "logo", "identidade visual"] },
+  { "id": "integracoes", "pergunta": "Com quais sistemas atuais precisa integrar?", "palavras": ["integração", "integrações", "integrar", "sistema atual"] },
+  { "id": "lgpd", "pergunta": "Há dados sensíveis (LGPD)?", "palavras": ["lgpd", "dados sensíveis", "consentimento"] },
+  { "id": "orcamento", "pergunta": "Qual o orçamento disponível?", "palavras": ["orçamento", "verba"] },
+  { "id": "suporte", "pergunta": "Quem dá suporte depois da entrega?", "palavras": ["suporte", "manutenção"] },
+  { "id": "usuarios", "pergunta": "Quantos usuários vão usar?", "palavras": ["usuários", "acessos", "alunos"] }
+]

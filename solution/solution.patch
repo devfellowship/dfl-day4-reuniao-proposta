@@ -1,0 +1,232 @@
+diff --git a/out/exemplo-1.json b/out/exemplo-1.json
+new file mode 100644
+index 0000000..b454d1e
+--- /dev/null
++++ b/out/exemplo-1.json
+@@ -0,0 +1,29 @@
++{
++  "escopo": [
++    {
++      "modulo": "login",
++      "prioridade": "obrigatorio",
++      "linha": 6
++    },
++    {
++      "modulo": "painel_admin",
++      "prioridade": "obrigatorio",
++      "linha": 3
++    },
++    {
++      "modulo": "relatorios",
++      "prioridade": "desejavel",
++      "linha": 8
++    }
++  ],
++  "fora_do_escopo": [],
++  "perguntas_pendentes": [
++    "orcamento"
++  ],
++  "prazo_semanas": 12,
++  "preco_centavos": {
++    "essencial": 1770000,
++    "recomendado": 2420000,
++    "completo": 2420000
++  }
++}
+diff --git a/out/exemplo-2.json b/out/exemplo-2.json
+new file mode 100644
+index 0000000..6bd9762
+--- /dev/null
++++ b/out/exemplo-2.json
+@@ -0,0 +1,43 @@
++{
++  "escopo": [
++    {
++      "modulo": "agenda",
++      "prioridade": "obrigatorio",
++      "linha": 7
++    },
++    {
++      "modulo": "integracao_pagamento",
++      "prioridade": "desejavel",
++      "linha": 11
++    },
++    {
++      "modulo": "login",
++      "prioridade": "obrigatorio",
++      "linha": 5
++    },
++    {
++      "modulo": "painel_admin",
++      "prioridade": "obrigatorio",
++      "linha": 7
++    },
++    {
++      "modulo": "relatorios",
++      "prioridade": "obrigatorio",
++      "linha": 32
++    }
++  ],
++  "fora_do_escopo": [
++    "app_mobile",
++    "notificacoes"
++  ],
++  "perguntas_pendentes": [
++    "hospedagem",
++    "integracoes"
++  ],
++  "prazo_semanas": 8,
++  "preco_centavos": {
++    "essencial": 4230000,
++    "recomendado": 4650000,
++    "completo": 4650000
++  }
++}
+diff --git a/out/exemplo-3.json b/out/exemplo-3.json
+new file mode 100644
+index 0000000..72c5371
+--- /dev/null
++++ b/out/exemplo-3.json
+@@ -0,0 +1,46 @@
++{
++  "escopo": [
++    {
++      "modulo": "chat",
++      "prioridade": "obrigatorio",
++      "linha": 3
++    },
++    {
++      "modulo": "integracao_erp",
++      "prioridade": "desejavel",
++      "linha": 12
++    },
++    {
++      "modulo": "integracao_pagamento",
++      "prioridade": "desejavel",
++      "linha": 16
++    },
++    {
++      "modulo": "login",
++      "prioridade": "opcional",
++      "linha": 6
++    },
++    {
++      "modulo": "painel_admin",
++      "prioridade": "obrigatorio",
++      "linha": 9
++    },
++    {
++      "modulo": "relatorios",
++      "prioridade": "opcional",
++      "linha": 29
++    }
++  ],
++  "fora_do_escopo": [
++    "app_mobile"
++  ],
++  "perguntas_pendentes": [
++    "hospedagem"
++  ],
++  "prazo_semanas": 12,
++  "preco_centavos": {
++    "essencial": 3250000,
++    "recomendado": 4850000,
++    "completo": 5550000
++  }
++}
+diff --git a/out/exemplo-4.json b/out/exemplo-4.json
+new file mode 100644
+index 0000000..bfe1539
+--- /dev/null
++++ b/out/exemplo-4.json
+@@ -0,0 +1,37 @@
++{
++  "escopo": [
++    {
++      "modulo": "integracao_pagamento",
++      "prioridade": "obrigatorio",
++      "linha": 5
++    },
++    {
++      "modulo": "notificacoes",
++      "prioridade": "opcional",
++      "linha": 15
++    },
++    {
++      "modulo": "relatorios",
++      "prioridade": "obrigatorio",
++      "linha": 26
++    },
++    {
++      "modulo": "site_institucional",
++      "prioridade": "obrigatorio",
++      "linha": 3
++    }
++  ],
++  "fora_do_escopo": [
++    "app_mobile"
++  ],
++  "perguntas_pendentes": [
++    "identidade_visual",
++    "orcamento"
++  ],
++  "prazo_semanas": null,
++  "preco_centavos": {
++    "essencial": 2300000,
++    "recomendado": 2300000,
++    "completo": 2460000
++  }
++}
+diff --git a/out/exemplo-5.json b/out/exemplo-5.json
+new file mode 100644
+index 0000000..93cab05
+--- /dev/null
++++ b/out/exemplo-5.json
+@@ -0,0 +1,47 @@
++{
++  "escopo": [
++    {
++      "modulo": "agenda",
++      "prioridade": "obrigatorio",
++      "linha": 5
++    },
++    {
++      "modulo": "integracao_erp",
++      "prioridade": "obrigatorio",
++      "linha": 65
++    },
++    {
++      "modulo": "integracao_pagamento",
++      "prioridade": "desejavel",
++      "linha": 22
++    },
++    {
++      "modulo": "login",
++      "prioridade": "obrigatorio",
++      "linha": 12
++    },
++    {
++      "modulo": "relatorios",
++      "prioridade": "obrigatorio",
++      "linha": 44
++    }
++  ],
++  "fora_do_escopo": [
++    "app_mobile",
++    "chat",
++    "notificacoes",
++    "painel_admin",
++    "site_institucional"
++  ],
++  "perguntas_pendentes": [
++    "hospedagem",
++    "orcamento",
++    "suporte"
++  ],
++  "prazo_semanas": 8,
++  "preco_centavos": {
++    "essencial": 5590000,
++    "recomendado": 6530000,
++    "completo": 6530000
++  }
++}

@@ -1,0 +1,10 @@
+{
+  "valor_hora_centavos": { "dev": 14000, "design": 11000, "qa": 8000 },
+  "urgencia": [
+    { "ate_semanas": 6, "pct": 150 },
+    { "ate_semanas": 12, "pct": 120 }
+  ],
+  "desconto_volume": { "horas_minimas": 250, "pct": 8 },
+  "arredondamento_centavos": 50000,
+  "minimo_centavos": 2000000
+}
